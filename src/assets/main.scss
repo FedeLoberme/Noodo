@@ -1,0 +1,53 @@
+
+$negro:  #0A1E25;
+
+#registerLogin {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 30px;
+    background: linear-gradient(
+        to right,
+        #fff 0%,
+        #fff 60%,
+        $negro 60%,
+        $negro 100%
+    );
+    .row {
+        .col-md-6 {
+            padding: 12vh 40px 10px 40px;
+            h1 {
+                padding-left: 10px;
+            }
+            p {
+                padding-left: 10px;
+            }
+            input {
+                border: none;
+                width: 100%;
+                border-bottom: 1px solid $negro;
+                margin: 10px 0;
+                padding: 10px 0;
+            }
+            input[type="checkbox"] {
+                width: initial;
+            }
+            label {
+                font-size: 14px;
+                margin: 20px 0;
+            }
+            button {
+                width: 100%;
+                border: none;
+                background-color: $negro;
+                color: #fff;
+                border-radius: 25px;
+                padding: 7px 0;
+                transition: all .3s ease-in-out;
+            }
+            button:disabled {
+                opacity: .3;
+            }
+        }
+    }
+}
+
