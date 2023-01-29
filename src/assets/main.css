@@ -2,17 +2,22 @@
   width: 100%;
   height: 100vh;
   padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(60%, #fff), color-stop(60%, #0A1E25), to(#0A1E25));
   background: linear-gradient(to right, #fff 0%, #fff 60%, #0A1E25 60%, #0A1E25 100%);
 }
+
 #registerLogin .row .col-md-6 {
   padding: 12vh 40px 10px 40px;
 }
+
 #registerLogin .row .col-md-6 h1 {
   padding-left: 10px;
 }
+
 #registerLogin .row .col-md-6 p {
   padding-left: 10px;
 }
+
 #registerLogin .row .col-md-6 input {
   border: none;
   width: 100%;
@@ -20,13 +25,16 @@
   margin: 10px 0;
   padding: 10px 0;
 }
-#registerLogin .row .col-md-6 input[type=checkbox] {
+
+#registerLogin .row .col-md-6 input[type="checkbox"] {
   width: initial;
 }
+
 #registerLogin .row .col-md-6 label {
   font-size: 14px;
   margin: 20px 0;
 }
+
 #registerLogin .row .col-md-6 button {
   width: 100%;
   border: none;
@@ -34,8 +42,15 @@
   color: #fff;
   border-radius: 25px;
   padding: 7px 0;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
+
 #registerLogin .row .col-md-6 button:disabled {
-  opacity: 0.3;
-}/*# sourceMappingURL=main.css.map */
+  opacity: .3;
+}
+
+#registerLogin .row .col-md-6 span {
+  margin: -25px;
+}
+/*# sourceMappingURL=main.css.map */

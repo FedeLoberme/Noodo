@@ -21,9 +21,18 @@
                 <!-- Login Form    v-on:submit.prevent="login"        -->
                 <form >
                   <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail" v-model="email" :rules="[/* val => inValidEmail(val) */]">
-                  <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" v-model="password"><span><i class="fas fa-light fa-eye"></i></span>
+                  <input type="password" id="password" class="fadeIn third" name="login" placeholder="Contraseña" v-model="password">
+                  <span  @click="pass1('password')">
+                    <i class="fas fa-light fa-eye"></i>
+                  </span>
                   <input type="password" id="password2" class="fadeIn third" name="login" placeholder="Repetir contraseña" v-model="password2">
-                  <label for=""><input type="checkbox" @click="pass1('password2')" name="terms" id="terms" v-model="checkbox">  Al registrar una cuenta confirmas que conoces y aceptas nuestros Términos y condiciones y Políticas de privacidad</label>
+                  <span  @click="pass1('password2')">
+                    <i class="fas fa-light fa-eye"></i>
+                  </span>
+                  <label for="terms">
+                    <input type="checkbox" @click="checkbox" name="terms" id="terms" v-model="checkbox"> 
+                     Al registrar una cuenta confirmas que conoces y aceptas nuestros Términos y condiciones y Políticas de privacidad
+                    </label>
                   <button :disabled="checked">Regístrame</button>
                 </form>
 
